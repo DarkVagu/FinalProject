@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #454545;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+input:hover {
+  border: 1px solid #B2410A;
+}
+
+input:active {
+  border: 1px solid #B2410A;
+  -webkit-box-shadow: 0px 0px 5px 1px #B2410A;
+          box-shadow: 0px 0px 5px 1px #B2410A;
+}
+
+input:focus {
+  border: 1px solid #B2410A;
+  -webkit-box-shadow: 0px 0px 5px 1px #B2410A;
+          box-shadow: 0px 0px 5px 1px #B2410A;
+}
+
+input.error {
+  color: #A40101;
+  border: 1px solid rgba(255, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 0, 0, 0.3);
+          box-shadow: 0px 0px 0px 2px rgba(255, 0, 0, 0.3);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+@import './fonts';
+
+$font-h1: Roboto-Regular;
+$font-h2: Roboto-Regular;
+$font-h3: Roboto-Medium;
+$fontText: Roboto-Light;
+
+$fontColor: #fff;
+
+$bodyBackgroundColor: #1F1F1F;
+$divBackgroundColor: #757575;
+$popUpDivBackgroundColor: #484848;
+$topUserDivBackgroundColor: linear-gradient(345.27deg, rgba(255, 255, 255, 0.1) 0.39%, rgba(255, 255, 255, 0) 102.72%);
+
+$firstButtonColor: #B2410A;
+$firstButtonHover: transparent;
+$firstButtonActive: #8D3003;
+
+$orangeGradient: linear-gradient(96.54deg, #FF5300 0%, #B2410A 37.91%, #8D3003 77.85%);
+$whiteColor: #fff;
+$secondButtonActive: #8D3003;
+
+$inputBorder: #454545;
+$inputHoverBorder:#B2410A;
+$inputActiveBorder:#B2410A;
+$inputErrorBorder: rgba(255, 0, 0, 0.55);
+$inputErrorFontColor: #A40101;
+
+$elementsColor:#B2410A;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid $inputBorder;
+    transition: 0.3s all;
+
+    &:hover {
+        border: 1px solid $inputHoverBorder;
+    }
+
+    &:active {
+        border: 1px solid $inputActiveBorder;
+        box-shadow: 0px 0px 5px 1px $inputActiveBorder;
+    }
+
+    &:focus {
+        border: 1px solid $inputActiveBorder;
+        box-shadow: 0px 0px 5px 1px $inputActiveBorder;
+    }
+
+    &.error {
+        color: $inputErrorFontColor;
+        border: 1px solid $inputErrorBorder;
+        box-shadow: 0px 0px 0px 2px rgba(255, 0, 0, 0.3);
+    }
+}
