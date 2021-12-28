@@ -1,0 +1,126 @@
+.lot {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__column {
+        width: 470px;
+        border-bottom: 2px solid #7C7C7C;
+        position: relative;
+        padding-bottom: 20px;
+        margin: 0 100px 60px 0;
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+
+        &:nth-child(6) {
+            margin-right: 0;
+        }
+
+        &:nth-child(9) {
+            margin-right: 0;
+        }
+
+        &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            background: #7C7C7C;
+            transform: rotate(45deg);
+            right: -5px;
+            bottom: -4px;
+        }
+
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            background: #7C7C7C;
+            transform: rotate(45deg);
+            left: -5px;
+            bottom: -4px;
+        }
+    }
+
+    &__columnTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__columnMidle {
+        margin-bottom: 20px;
+    }
+
+    &__columnBottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.item-lot {
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    &__userName {
+        margin-left: 10px;
+        font-size: 26px;
+        font-family: $fontLight;
+    }
+
+    &__price {
+        margin-right: 25px;
+        font-size: 26px;
+        font-family: $fontLight;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+
+        & img {
+            border-radius: 5px;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    &__name {
+        margin-left: 25px;
+        font-size: 28px;
+        font-family: $fontRegular;
+    }
+
+    &__elements {
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    //&__like {}
+
+    &__button {
+        padding: 5px 20px;
+        margin-left: 10px;
+
+        & a {
+            text-decoration: none;
+            font-size: 18px;
+            font-family: $fontLight;
+            color: $whiteColor;
+        }
+
+
+    }
+}

@@ -27,7 +27,6 @@
 
     &__navigation ul li {
         margin-right: 80px;
-
         display: inline;
 
         &:last-child {
@@ -40,6 +39,14 @@
         color: $fontColor;
         font-size: 22px;
         font-family: 'Roboto-Light';
+
+        &:hover {
+            color: rgb(155, 155, 155);
+        }
+
+        &:active {
+            color: $elementsColor;
+        }
     }
 
     &__button {

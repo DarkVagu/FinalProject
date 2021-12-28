@@ -1,11 +1,13 @@
 @import './fonts';
 
-$font-h1: Roboto-Regular;
-$font-h2: Roboto-Regular;
-$font-h3: Roboto-Medium;
-$fontText: Roboto-Light;
+$fontRegular: Roboto-Regular;
+$fontMedium: Roboto-Medium;
+$fontLight: Roboto-Light;
 
 $fontColor: #fff;
+$whiteColor: #fff;
+
+
 
 $bodyBackgroundColor: #1F1F1F;
 $divBackgroundColor: #757575;
@@ -32,6 +34,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: $bodyBackgroundColor;
+    color: $whiteColor;
 }
 
 input {
@@ -66,29 +69,39 @@ input {
     background-clip: padding-box;
     border: solid 1px transparent;
     position: relative;
-}
 
-.firstButton::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    margin: -1px;
-    background: $orangeGradient;
-}
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        margin: -1px;
+        background: $orangeGradient;
+    }
 
-.firstButton:hover::after {
-    background: white;
-}
+    &:hover::after {
+        background: white;
+    }
 
-.firstButton:active::after {
-    background: $ButtonColor;
+    &:active::after {
+        background: $ButtonColor;
+    }
 }
 
 .secondButton {
     background: $ButtonColor;
     border: 1px solid $ButtonColor;
+
+    &:hover {
+        background: transparent;
+        border-color: $whiteColor;
+    }
+
+    &:active {
+        background: #8D3003;
+        border-color: #8D3003;
+    }
 }
