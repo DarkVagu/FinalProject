@@ -1,0 +1,194 @@
+.catalogLots {
+    display: flex;
+
+    &__filters {
+        max-width: 20%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 75px 0;
+    }
+
+    &__lots {
+        max-width: 80%;
+        border-left: 2px solid $elementsColor;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 115px;
+    }
+
+    &__column {
+        margin: 0 10px 40px;
+        border-top: 2px solid white;
+        width: 380px;
+        padding: 20px;
+    }
+}
+
+.item-catalogLots {
+    &__title {
+        margin-bottom: 20px;
+        border-bottom: 2px solid $whiteColor;
+
+        & h1 {
+            font-family: $fontMedium;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__price {
+        margin-bottom: 20px;
+        border-bottom: 2px solid $whiteColor;
+    }
+
+    &__h2Title {
+
+        & h2 {
+            font-family: $fontMedium;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__priceBlock {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+
+    &__text {
+        margin: 0 30px 5px;
+        font-family: $fontLight;
+        font-size: 24px;
+    }
+
+    &__field {
+        margin: 0 30px;
+
+        & input {
+            max-width: 120px;
+            height: 30px;
+            background: $divBackgroundColor;
+            box-shadow: none;
+            border: none;
+            outline: none;
+            font-size: 22px;
+            font-family: $fontLight;
+            color: $whiteColor;
+            border-radius: 5px;
+        }
+    }
+
+    &__state {
+        margin-bottom: 20px;
+        border-bottom: 2px solid $whiteColor;
+        padding-bottom: 20px;
+    }
+
+    &__stateBlock {
+        display: flex;
+        align-items: center;
+        margin: 0 30px 10px;
+    }
+
+    &__checkboxText {
+        font-family: $fontLight;
+        font-size: 24px;
+        margin: 0 5px;
+    }
+
+    &__delivery {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $whiteColor;
+    }
+
+    &__photo {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $whiteColor;
+    }
+
+    &__button {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 24px;
+        font-family: $fontRegular;
+
+        & a {
+            color: $whiteColor;
+            text-decoration: none;
+        }
+    }
+
+
+
+    &__imageBlock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__image {
+        margin-bottom: 30px;
+    }
+
+    &__like {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    &__lotsInfo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        font-size: 24px;
+        font-family: $fontMedium;
+    }
+
+    &__lotsPrice {
+        font-size: 24px;
+        font-family: $fontMedium;
+    }
+
+    &__category {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-family: $fontLight;
+    }
+
+    &__time {
+        background: transparent;
+        border: 2px solid #B2410A;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-family: $fontRegular;
+    }
+
+    &__lotsButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #B2410A;
+        padding: 10px 30px;
+        margin: 0 40px;
+        font-size: 24px;
+        font-family: $fontRegular;
+
+        & a {
+            color: $whiteColor;
+            text-decoration: none;
+        }
+    }
+}

@@ -11,19 +11,19 @@
         border-bottom: 2px solid #7C7C7C;
         position: relative;
         padding-bottom: 20px;
-        margin: 0 100px 60px 0;
+        margin: 0 50px 60px;
 
-        &:nth-child(3) {
-            margin-right: 0;
-        }
+        // &:nth-child(3) {
+        //     margin-right: 0;
+        // }
 
-        &:nth-child(6) {
-            margin-right: 0;
-        }
+        // &:nth-child(6) {
+        //     margin-right: 0;
+        // }
 
-        &:nth-child(9) {
-            margin-right: 0;
-        }
+        // &:nth-child(9) {
+        //     margin-right: 0;
+        // }
 
         &::after {
             content: '';

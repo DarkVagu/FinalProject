@@ -1,0 +1,39 @@
+.catalogList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 120px;
+    border-bottom: 2px solid $whiteColor;
+}
+
+.item-catalogList {
+    &__navigator {
+        & ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+
+            & li {
+                margin: 0 20px;
+                display: inline;
+
+                & a {
+                    text-decoration: none;
+                    color: $fontColor;
+                    font-size: 22px;
+                    font-family: 'Roboto-Light';
+
+                    &:hover {
+                        color: rgb(155, 155, 155);
+                    }
+
+                    &:active {
+                        color: $elementsColor;
+                    }
+                }
+            }
+        }
+    }
+}

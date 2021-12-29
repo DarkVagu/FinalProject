@@ -3,13 +3,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 100px 10px 100px;
+        padding: 10px 100px;
         border-bottom: 2px solid $whiteColor;
     }
 
     &__banner {
-        background: url(../img/header/imgBG.png) no-repeat center 0;
-        background-size: 100%;
+        background: url(../img/header/imgBG.png) no-repeat;
+        width: 100%;
         height: 80vh;
         border-bottom: 2px solid $whiteColor;
         position: relative;
@@ -26,12 +26,9 @@
     }
 
     &__navigation ul li {
-        margin-right: 80px;
+        margin: 0 40px;
         display: inline;
 
-        &:last-child {
-            margin-right: 0px;
-        }
     }
 
     &__navigation ul li a {
