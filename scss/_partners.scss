@@ -1,0 +1,25 @@
+.partners {
+    &__container {
+        max-width: 850px;
+        margin-left: 150px;
+    }
+}
+
+.item-partners {
+    &__title {
+        padding: 5px;
+        border-bottom: 2px solid $elementsColor;
+        margin-bottom: 50px;
+
+        & h1 {
+            font-size: 36px;
+            font-family: $fontRegular;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        font-family: $fontLight;
+        margin-bottom: 250px;
+    }
+}

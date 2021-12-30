@@ -12,11 +12,11 @@
 
 .item-footer {
     &__logo {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     &__list {
-        margin-top: 40px;
+        margin-top: 20px;
 
         & ul {
             list-style-type: none;
@@ -31,7 +31,7 @@
 
                 & a {
                     color: $whiteColor;
-                    font-size: 24px;
+                    font-size: 18px;
                     font-family: $fontLight;
                     text-decoration: none;
 
@@ -52,14 +52,14 @@
     }
 
     &__text {
-        margin-top: 40px;
+        margin-top: 20px;
         color: $whiteColor;
-        font-size: 24px;
+        font-size: 18px;
         font-family: $fontRegular;
     }
 
     &__link {
-        margin: 40px 0;
+        margin: 20px 0;
 
         & ul {
             list-style-type: none;
