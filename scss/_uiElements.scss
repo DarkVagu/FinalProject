@@ -7,6 +7,9 @@ $fontLight: Roboto-Light;
 $fontColor: #fff;
 $whiteColor: #fff;
 
+$elementsColor:#B2410A;
+$orangeGradient: linear-gradient(96.54deg, #FF5300 0%, #B2410A 37.91%, #8D3003 77.85%);
+
 
 
 $bodyBackgroundColor: #1F1F1F;
@@ -17,7 +20,7 @@ $topUserDivBackgroundColor: linear-gradient(345.27deg, rgba(255, 255, 255, 0.1) 
 $ButtonColor: #B2410A;
 $ButtonActive: #8D3003;
 
-$orangeGradient: linear-gradient(96.54deg, #FF5300 0%, #B2410A 37.91%, #8D3003 77.85%);
+
 $whiteColor: #fff;
 $secondButtonActive: #8D3003;
 
@@ -27,7 +30,7 @@ $inputActiveBorder:#B2410A;
 $inputErrorBorder: rgba(255, 0, 0, 0.55);
 $inputErrorFontColor: #A40101;
 
-$elementsColor:#B2410A;
+
 
 body {
     margin: 0;

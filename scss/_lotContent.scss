@@ -1,0 +1,184 @@
+.lotContent {
+    display: flex;
+    justify-content: space-between;
+
+    &__lotImage {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__container {
+        max-width: 700px;
+        margin: 60px 100px 150px;
+    }
+
+    &__lotState {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__stateContainer {
+        margin: 135px 100px 35px;
+    }
+
+}
+
+
+.item-lotContent {
+    &__title {
+        margin-bottom: 20px;
+        border-bottom: 2px solid $elementsColor;
+
+        & h1 {
+            font-size: 42px;
+            font-family: $fontMedium;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    &__image {
+        width: 600px;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.4);
+
+        & img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    &__rowImage {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 40px;
+    }
+
+    &__columnImage {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__time {
+        border: 2px solid $elementsColor;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 32px;
+        font-family: $fontLight;
+    }
+
+    &__timer {
+        border: 1px solid $elementsColor;
+        padding: 5px;
+        display: flex;
+        margin-left: 50px;
+    }
+
+    &__hourBlock {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    &__timerText {
+        font-size: 24px;
+        font-family: $fontLight;
+    }
+
+    &__timerBottomText {
+        font-size: 24px;
+        opacity: 0.6;
+        font-family: $fontLight;
+    }
+
+    &__minuteBlock {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    &__secondBlock {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    &__bid {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 20px;
+    }
+
+    &__bidText {
+        font-size: 32px;
+        font-family: $fontLight;
+        border-bottom: 2px solid $blackGray;
+        padding-bottom: 5px;
+    }
+
+    &__bidPrice {
+        font-size: 32px;
+        font-family: $fontLight;
+        border-bottom: 2px solid $blackGray;
+        padding-bottom: 5px;
+    }
+
+    &__buttonBlock {
+        padding: 10px 0;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 24px;
+        font-family: $fontRegular;
+        margin: 0 180px;
+
+        & a {
+            text-decoration: none;
+            color: $whiteColor;
+        }
+    }
+}

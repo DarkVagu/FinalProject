@@ -1,0 +1,26 @@
+.lotInfo {
+    &__container {
+        margin: 0 150px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.item-lotInfo {
+    &__title {
+        padding-bottom: 5px;
+        border-bottom: 2px solid $blackGray;
+        margin-bottom: 20px;
+
+        & h1 {
+            font-size: 36px;
+            font-family: $fontRegular;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        font-family: $fontLight;
+    }
+}
