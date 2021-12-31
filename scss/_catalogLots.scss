@@ -1,8 +1,12 @@
 .catalogLots {
     display: flex;
 
+    @media (max-width: 980px) {
+        flex-direction: column;
+    }
+
     &__filters {
-        max-width: 20%;
+        //max-width: 20%;
         display: flex;
         flex-direction: column;
         padding: 20px 75px 0;
@@ -15,6 +19,12 @@
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 115px;
+
+        @media (max-width: 980px) {
+            border-left: none;
+            max-width: none;
+        }
+
     }
 
     &__column {
@@ -55,6 +65,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
+
     }
 
 
@@ -125,8 +136,6 @@
             text-decoration: none;
         }
     }
-
-
 
     &__imageBlock {
         display: flex;

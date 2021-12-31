@@ -8,6 +8,10 @@
 
 .item-catalogList {
     &__navigator {
+        @media (max-width: 980px) {
+            display: none;
+        }
+
         & ul {
             list-style-type: none;
             margin: 0;
@@ -18,6 +22,49 @@
             & li {
                 margin: 0 20px;
                 display: inline;
+
+                & a {
+                    text-decoration: none;
+                    color: $fontColor;
+                    font-size: 22px;
+                    font-family: 'Roboto-Light';
+
+                    &:hover {
+                        color: rgb(155, 155, 155);
+                    }
+
+                    &:active {
+                        color: $elementsColor;
+                    }
+                }
+            }
+        }
+    }
+
+    &__secondNavigator-disable {
+        display: none;
+
+        @media (max-width: 980px) {
+            display: flex;
+            //flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__firstRow,
+    &__secondRow {
+        & ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            //display: flex;
+            align-items: center;
+
+            & li {
+                margin: 0 20px;
+                //display: inline;
 
                 & a {
                     text-decoration: none;

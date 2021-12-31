@@ -3,13 +3,27 @@
     height: 72vh;
     width: 100%;
     position: relative;
-    padding-top: 100px;
+    padding-top: 150px;
 
     &__container {
         max-width: 420px;
         margin: 0 0 0 200px;
         padding: 40px;
         position: relative;
+
+        @media (max-width: 850px) {
+            &::after {
+                content: '';
+                display: none;
+            }
+
+            &::before {
+                content: '';
+                display: none;
+            }
+
+            margin: 0 0 0 40px;
+        }
 
         &::after {
             content: '';
@@ -150,24 +164,28 @@
         margin: 0 20px 20px;
     }
 
-    &__checkBox {
-        // margin-bottom: 20px;
-        // padding: 3px;
+    //&__checkBox {
+    // margin-bottom: 20px;
+    // padding: 3px;
 
-        // & input {
-        //     width: 100%;
-        //     height: 100%;
-        //     background: transparent;
-        //     box-shadow: none;
-        //     border: 1px solid $blackGray;
-        //     outline: none;
-        // }
-    }
+    // & input {
+    //     width: 100%;
+    //     height: 100%;
+    //     background: transparent;
+    //     box-shadow: none;
+    //     border: 1px solid $blackGray;
+    //     outline: none;
+    // }
+    //}
 
     &__text {
         font-size: 16px;
         font-family: $fontRegular;
         margin: 0 15px;
+
+        @media (max-width: 550px) {
+            font-size: 12px;
+        }
 
     }
 

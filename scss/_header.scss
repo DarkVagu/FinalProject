@@ -5,6 +5,23 @@
         align-items: center;
         padding: 10px 100px;
         border-bottom: 2px solid $whiteColor;
+
+        @media (max-width: 980px) {
+            padding-left: 55px;
+            padding-right: 55px;
+        }
+
+
+
+        @media (max-width: 880px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @media (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     &__banner {
@@ -13,21 +30,51 @@
         height: 80vh;
         border-bottom: 2px solid $whiteColor;
         position: relative;
+
+        @media (max-width: 880px) {
+            height: 60vh;
+        }
+    }
+
+    &__sidebar-disable {
+        display: none;
+
+        @media (max-width: 895px) {
+            display: block;
+        }
+
     }
 }
 
 .item-header {
+    &__navigation {
+        @media (max-width: 895px) {
+            display: none;
+        }
+    }
+
     &__navigation ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
         align-items: center;
+
+
+
     }
 
     &__navigation ul li {
         margin: 0 40px;
         display: inline;
+
+        @media (max-width: 1361px) {
+            margin: 0 20px;
+        }
+
+        @media (max-width: 1200px) {
+            margin: 0 10px;
+        }
 
     }
 
@@ -36,6 +83,7 @@
         color: $fontColor;
         font-size: 22px;
         font-family: 'Roboto-Light';
+        overflow: hidden;
 
         &:hover {
             color: rgb(155, 155, 155);
@@ -49,7 +97,7 @@
     &__button {
         text-decoration: none;
         color: $fontColor;
-        font-size: 24px;
+        font-size: 20px;
         font-family: 'Roboto-Light';
     }
 
@@ -62,10 +110,26 @@
     &__signIn {
         padding: 5px 20px 5px 20px;
         margin-right: 30px;
+
+        @media (max-width: 1100px) {
+            display: none;
+        }
+    }
+
+    &__authorizationSignIn {
+        padding: 5px 20px 5px 20px;
+        margin-right: 30px;
+
+        @media (max-width: 850px) {
+            margin-right: 10px;
+        }
     }
 
     &__signUp {
         padding: 5px 20px 5px 20px;
+
+
+
     }
 
     &__rectangle {
@@ -87,5 +151,154 @@
         font-size: 96px;
         font-family: 'Roboto-Regular';
         text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: 1361px) {
+            font-size: 66px;
+        }
+
+        @media (max-width: 880px) {
+            font-size: 42px;
+        }
+
+    }
+
+    &__toggle {
+
+        margin-left: 10px;
+        width: 120px;
+        height: 120px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 56px;
+            height: 4px;
+            background: white;
+            transform: translateY(10px);
+            transition: .2s;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 56px;
+            height: 4px;
+            background: white;
+            transform: translateY(-10px);
+            transition: .2s;
+        }
+
+        &.active::before {
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        &.active::after {
+            transform: translateY(0px) rotate(-45deg);
+        }
+
+    }
+
+    &__sidebar {
+        position: fixed;
+        top: 0px;
+        left: -300px;
+        width: 300px;
+        height: 100vh;
+        background: $bodyBackgroundColor;
+        transition: .5s;
+        z-index: 2;
+
+        & ul {
+            position: relative;
+            margin-top: 30px;
+
+            & li {
+                list-style: none;
+                margin: 10px 0;
+
+                &:hover {
+                    background: $blackGray;
+                }
+
+                & a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                    font-family: $fontLight;
+                }
+            }
+        }
+
+        &.active {
+            left: 0;
+        }
+    }
+
+    &__name {
+        font-family: $fontLight;
+        font-size: 24px;
+        margin: 0 20px;
+
+        @media (max-width: 1060px) {
+            display: none;
+        }
+    }
+
+    &__ava {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.4);
+
+        @media (max-width: 1060px) {
+            margin-left: 20px;
+        }
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__ico {
+        margin: 0 5px;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__profileButton {
+        padding: 5px;
+
+        @media (max-width: 650px) {
+            display: none;
+        }
+    }
+
+    &__profileButton-disable {
+        display: none;
+        width: 30px;
+        height: 30px;
+
+        @media (max-width: 650px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
